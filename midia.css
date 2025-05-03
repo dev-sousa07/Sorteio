@@ -1,5 +1,29 @@
 /* Media Queries para dispositivos menores que 768px */
-@media (max-width: 768px) {
+@media screen and (max-width: 767px) {
+
+    header{
+        text-align: center;
+        background-color: #111827;
+        color: aliceblue;
+        padding: 10px;
+        
+    }
+
+    header > h2{
+        margin:0%;
+    }
+    
+
+    section{
+        background-color: #111827;
+        color: aliceblue;
+        width: 400px;
+        height: 400px;
+        margin: auto;
+        margin-top: 1px;
+        border-radius: 10px;
+        padding: 10px;
+    }
 
     .container{
         display: flex;
@@ -24,7 +48,7 @@
   }
   
   /* Media Queries para dispositivos menores que 480px */
-  @media (max-width: 480px) {
+  @media screen and (max-width: 480px) {
     .container {
       width: 90%;
     }

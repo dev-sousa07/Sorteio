@@ -8,10 +8,9 @@ body{
 }
 
 header{
-    width: 100%;
     background-color: #111827;
     color: aliceblue;
-    padding: 5px;
+    padding: 2px;
 }
 
 header > h2{
