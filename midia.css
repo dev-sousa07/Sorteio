@@ -64,12 +64,11 @@ header > h2{
 section{
     background-color: #111827;
     color: aliceblue;
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     margin: auto;
     margin-top: 1px;
     border-radius: 10px;
-    padding: 10px;
 }
 
 .container{

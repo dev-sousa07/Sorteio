@@ -10,7 +10,19 @@ function sortear() {
     const min = Math.min(num1, num2);
     const max = Math.max(num1, num2);
   
-    const sorteio = Math.floor(Math.random() * (max - min + 1)) + min;
-    document.getElementById("resultado").textContent = "Sorteado: " + sorteio;
+    let tempo = 3;
+    document.getElementById("resultado").textContent = `Sorteando em ${tempo}...`;
+  
+    const intervalo = setInterval(() => {
+      tempo--;
+      if (tempo > 0) {
+        document.getElementById("resultado").textContent = `Sorteando em ${tempo}...`;
+      } else {
+        clearInterval(intervalo);
+        
+        const sorteio = Math.floor(Math.random() * (max - min + 1)) + min;
+        document.getElementById("resultado").textContent = "Sorteado: " + sorteio;
+      }
+    }, 1000); // Atualiza a cada 1 segundo
   }
   
